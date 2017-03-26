@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'holda.piotr'
+version = '2.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile 'joda-time:joda-time:2.9.9'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.7'
+    testCompile 'junit:junit:4.12'
+}
